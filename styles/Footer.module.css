@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 3rem; /* More padding */
+  background-color: #ffffff; /* Clean white background */
+  border-top: 1px solid #f0f0f0;
+  box-shadow: 0 -6px 25px rgba(0, 0, 0, 0.02); /* Subtle shadow */
+  margin-top: 6rem; /* More space from content */
+}
+
+.footer p {
+  margin: 0;
+  color: #777; /* Softer text color */
+  font-size: 1rem;
+  font-weight: 400;
+}
