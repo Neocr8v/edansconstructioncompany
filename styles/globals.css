@@ -145,3 +145,13 @@ a {
 .custom-modal {
   z-index: 9999 !important;
 }
+
+/* Modifier for left-aligned headings */
+.heading-left {
+  text-align: left;
+}
+
+.heading-left::after {
+  left: 0;
+  transform: none;
+}

@@ -19,7 +19,7 @@ export default function About() {
           <AnimateOnScroll>
             <section className={`${styles.aboutSection} ${styles.sectionPadding}`}> {/* Reusing aboutSection for consistent styling */}
               <div className={styles.aboutContent}>
-                <h2>Our Story: Building a Legacy of Excellence in Ghana</h2>
+                <h2 className={styles['heading-left']}>Our Story: Building a Legacy of Excellence in Ghana</h2>
                 <p>
                   Edans Construction Company was born from a simple idea: to build better. To build with passion, with quality, and with the client at the heart of everything we do. From our roots in Ghana, we've grown into a leading name in the construction industry, known for turning ambitious visions into reality. We don't just build structures; we craft spaces that inspire and are built to last.
                 </p>
@@ -32,8 +32,7 @@ export default function About() {
                 <Image
                   src="/edans-site.jpg" // Placeholder for an engaging image
                   alt="Edans Construction Company team meeting on site"
-                  width={600}
-                  height={400}
+                  layout="fill"
                   objectFit="cover"
                   className={styles.roundedImage}
                 />

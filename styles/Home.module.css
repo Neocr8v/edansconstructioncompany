@@ -121,6 +121,11 @@
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
   color: #2c3e50;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  word-break: break-word; /* Force word break */
+  text-align: left; /* Ensure left alignment */
+  max-width: 100%;
 }
 
 .aboutContent p {
@@ -128,6 +133,11 @@
   line-height: 1.8;
   color: #666;
   margin-bottom: 2.5rem;
+  word-wrap: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
+  hyphens: auto;
+  text-align: left; /* Ensure left alignment */
 }
 
 .aboutImage {
@@ -135,6 +145,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; /* Required for layout='fill' */
+  width: 100%;
+  min-height: 400px; /* Set a height for the container */
 }
 
 .roundedImage {
@@ -154,6 +167,9 @@
   font-size: 4.5rem;
   margin-bottom: 3.5rem;
   color: #2c3e50;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .servicesGrid {
@@ -222,6 +238,8 @@
   font-size: 1.15rem;
   line-height: 1.8;
   color: #666;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Projects Section */
@@ -405,12 +423,12 @@
   }
 
   .heroContent h1 {
-    font-size: 3rem;
+    font-size: 1.8rem; /* Final reduction of font size for mobile */
   }
 
   .heroContent p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
 
   .heroCta {
@@ -418,19 +436,33 @@
     gap: 1rem;
   }
 
+  .heroContent {
+    padding-top: 3rem; /* Add more space above hero text on mobile */
+  }
+
   .aboutSection {
     flex-direction: column;
-    gap: 2rem;
     padding: 4rem 1.5rem;
     margin-top: -4rem;
   }
 
+  .aboutContent {
+    flex: 1;
+    min-width: 0; /* Allow content to shrink */
+    box-sizing: border-box;
+  }
+
   .aboutContent h2 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Reduced font size for mobile */
   }
 
   .aboutContent p {
     font-size: 1rem;
+  }
+
+  .aboutImage {
+    width: 100%;
+    height: auto;
   }
 
   .servicesSection,
@@ -442,7 +474,7 @@
   .servicesSection h2,
   .projectsSection h2,
   .finalCtaSection h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin-bottom: 2.5rem;
   }
 
@@ -459,7 +491,7 @@
 
   .serviceCard h3,
   .projectItem h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem; /* Reduced font size for mobile */
   }
 
   .serviceCard p,
@@ -512,5 +544,24 @@
   .formGroup textarea {
     padding: 0.9rem;
     font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .contactContainer {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 768px) {
+    .contactContainer {
+      flex-direction: column;
+    }
   }
 }

@@ -15,13 +15,13 @@ export default function Contact() {
         <Navbar />
         <main className={styles.main}>
           <section className={`${styles.sectionPadding}`}>
-            <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+            <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem' }}>
               <h2 className={styles.sectionTitle}>Get in Touch: Let's Build Together</h2>
               <p className={styles.sectionDescription}>
                 We'd love to hear from you! Whether you have a question about our services, need a detailed quote, or want to discuss a potential partnership, our team is ready to assist you. Reach out to us through the form below or directly via our contact details.
               </p>
             </div>
-            <div style={{ display: 'flex', gap: '2rem', marginTop: '2rem' }}>
+            <div className={styles.contactContainer}>
               <div style={{ flex: 1 }}>
                 <div className={styles.contactInfo}>
                   <p><strong>Phone:</strong> <a href="tel:+233551594206">+233 55 159 4206</a></p>

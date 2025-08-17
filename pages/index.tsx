@@ -44,7 +44,7 @@ export default function Home() {
           <AnimateOnScroll>
             <section className={styles.aboutSection}>
               <div className={styles.aboutContent}>
-                <h2>About Edans Construction Company</h2>
+                <h2 className={styles['heading-left']}>About Edans Construction Company</h2>
                 <p>
                   With a legacy built on integrity and innovation, Edans Construction Company stands at the forefront of modern construction. Our dedicated team of experts combines cutting-edge techniques with timeless craftsmanship to deliver projects that not only meet but exceed expectations. We are committed to sustainable practices and client-centric solutions, ensuring every build is a testament to our unwavering pursuit of excellence.
                 </p>
@@ -54,8 +54,7 @@ export default function Home() {
                 <Image
                   src="/contractor.jpg"
                   alt="Construction team collaborating on site"
-                  width={600}
-                  height={400}
+                  layout="fill"
                   objectFit="cover"
                   className={styles.roundedImage}
                 />
